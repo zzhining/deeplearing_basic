@@ -1,11 +1,5 @@
 # GAN
 
-**Contents**
-
-[TOC]
-
-## GAN
-
 - Generative Adversarial Networks, 생성적 적대 신경망
 - 대립하는 두 시스템 생성자(Generator)와 판별자(Discriminator)가 서로 경쟁하는 방식으로 학습을 진행하는 비지도 학습 알고리즘 (준지도학습, Semi-supervised learning)
 - 비교 학습 방식으로 실제와 비슷한 가상의 데이터(예: 이미지 또는 음성 등) 생성
@@ -30,7 +24,7 @@
 
 
 
-## DCGAN
+# DCGAN
 
 - GAN알고리즘을 구성하는 Generator와 Discriminator 의 Fully connected layer를 CNN(Convolutional Neural Network) 구조로 대체한 알고리즘
 - 생성자(Generator)가 단순 기억으로 생성하지 않고, z의 미세변동에 따른 생성(generate)결과가 연속적으로 부드럽게 이루어지도록 보완
@@ -50,7 +44,7 @@
   - large dataset, real time app에 적용 불가능
 - DCGAN으로 생성한 MNIST 이미지 
 
-![image-20220902210017976](C:\Users\0biwa\AppData\Roaming\Typora\typora-user-images\image-20220902210017976.png)
+![image-20220902210017976](https://github.com/zzhining/deeplearing_basic/blob/main/images/image-20220902210017976.png)
 
 
 
@@ -58,7 +52,7 @@
 
 
 
-## Examples
+# Examples
 
 - [BEGAN](https://arxiv.org/pdf/1703.10717.pdf)
 - [Progressive Growing GAN](https://arxiv.org/pdf/1710.10196.pdf)

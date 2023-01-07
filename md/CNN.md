@@ -1,9 +1,6 @@
 # CNN
 
-**Contents**
-
-[TOC]
-
+----
 ## Computer Vision Task
 
 ![image-20220902201614719](https://github.com/zzhining/deeplearing_basic/blob/main/images/image-20220902201614719.png)
@@ -30,23 +27,17 @@
 
 
 
-이미지도 숫자다
+## 이미지도 숫자다
 
 ![image-20220902202941516](https://github.com/zzhining/deeplearing_basic/blob/main/images/image-20220902202941516.png)
 
 
+----
+
+## CNN(Convolutional Neural Network)
 
 ![image-20220902202711392](https://github.com/zzhining/deeplearing_basic/blob/main/images/image-20220902202711392.png)
 
-
-
-
-
-
-
-## CNN
-
-- Convolutional Neural Network
 
 - 배경
 
@@ -67,7 +58,7 @@
 
   ![image-20220901174515827](https://github.com/zzhining/deeplearing_basic/blob/main/images/image-20220901174515827.png)
 
-  
+------
 
 ### CNN의 주요 연산
 
@@ -76,26 +67,26 @@
 - 컨볼루션(Convolution)
   - 특징 추출 위해 단계별 다양한 필터 적용하고, 필터 적용시 마다 이미지 왼쪽 위에서 오른쪽 아래까지 밀면서 곱하고 더하는 작업
   - 이미지의 특징점을 효과적으로 찾는데 활용
-  - 필터(Filter), 커널(Kernel)
+  - **필터(Filter), 커널(Kernel)**
     - 이미지에 겹치는 작은 필터 3x3 또는 5x5 사용
     - 학습을 통해 자동으로 적합한 필터 생성: 이미지의 특징을 추출하는 필터 학습
   - 컨볼루션 연산을 통해 여러 개의 작은 필터가 이미지 위를 돌아다니면서 특징점들을 찾아 그 합성곱 결과를 다음 계층으로 보냄
     - 적은 수의 가중치로 이미지 처리를 효율적으로 할 수 있음
-- 패딩(Padding)
+- **패딩(Padding)**
   - 입력 이미지 주변을 0으로 감싸서, 이미지 크기가 줄어드는 것을 보완
-- 스트라이드(Stride)
+- **스트라이드(Stride)**
   - 필터를 몇 칸 씩 건너뛰며 적용할 지 조절하는 값
-- 특징 맵(feature map)
-  - 컨볼루션 거쳐 나온 새로운 이미지유형 
-- 풀링(Pooling)
+- **특징 맵(feature map)**
+  - 컨볼루션 연산을 거쳐 나온 결과
+- **풀링(Pooling)**
   - 필터를 거친 여러 특징 중 가장 중요한 특징 하나 골라냄 (Sub sampling)
   - 평균값이나 최대값 선택(max-pooling, average-pooling)
   - 학습해야할 매개변수가 없고, 채널 수가 변하지 않음
-- 완전연결(Fully connected)
+- **완전연결(Fully connected)**
   - 이전 레이어의 모든 처리 결과를 하나로 연결
   - 찾은 특징점을 기반으로 이미지를 분류(Classification)하는데 주로 활용
 
-
+------
 
 ### 컨볼루션 연산
 
@@ -121,7 +112,7 @@
 
 
 
-
+------
 
 ### 입출력 크기 계산 방법
 
@@ -135,7 +126,7 @@
 
 
 
-
+------
 
 ### CNN의 차원 축소 방법
 
@@ -143,7 +134,7 @@
 - Stride
 
 
-
+------
 ## 실습
 
 - MNIST 숫자 인식 모델
@@ -235,7 +226,7 @@
 
 
 
-
+------
 
 
 
@@ -245,7 +236,4 @@
 - 학습을 빠르게 하며 예측 성능을 더 높임
 - 이미 잘 훈련된 모델이 있고, 특히 해당 모델과 유사한 문제를 해결 시 transfer learning을 사용
 
-
-
-## CNN 적용 사례
 
